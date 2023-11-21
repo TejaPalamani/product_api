@@ -1,0 +1,21 @@
+POST http://localhost:3000/api/products/
+Content-Type: application/json
+
+{
+    "name":"apple",
+    "category":"electronics",
+    "imageUrl":"random.jpg",
+    "description":"product is used to call"
+}
+
+####
+
+GET http://localhost:3000/api/products/?page=1&pageSize=10&productName=tv&category=electronics
+
+###
+GET http://localhost:3000/api/products/655d1c3248670ba150f7b3f5
+
+
+###
+
+DELETE http://localhost:3000/api/products/655d1c3248670ba150f7b3f5
